@@ -173,7 +173,7 @@
   (erc-prompt-for-nickserv-password nil)
   (erc-autojoin-channels-alist '(("libera.chat" "#txstcs" "#emacs" "#gentoo" "#archlinux")))
   (erc-autojoin-timing nil)
-  (erc-autojoin-delay 20)
+  (erc-autojoin-delay 60)
   ;; line wrapping
   (erc-fill-function 'erc-fill-variable)
   (erc-fill-prefix "                         ")
