@@ -106,8 +106,8 @@
         (pause/resume-music))
       (progn
         (put 'musicisplaying 'state t)
-        (message "Loading ~/Music . . .")
-        (emms-add-directory-tree "~/Music")
+        (message "Loading Music . . .")
+        (emms-add-directory-tree "/media/music")
         (message "Turning repeat on.")
         (emms-toggle-repeat-playlist)
         (shuffle-my-music)
@@ -171,9 +171,9 @@
   (erc-hide-timestamps nil)
   ;; disable built-in password prompt and define autojoin list
   (erc-prompt-for-nickserv-password nil)
-  (erc-autojoin-channels-alist '(("libera.chat" "#txstcs" "#emacs" "#gentoo" "#archlinux")))
-  (erc-autojoin-timing nil)
-  (erc-autojoin-delay 60)
+  (erc-autojoin-channels-alist '(("libera.chat" "#txstcs" "#emacs" "#gentoo" "#archlinux" "#gentoo-chat" "shadowlamb")))
+  ;;(erc-autojoin-timing nil)
+  (erc-autojoin-delay 90)
   ;; line wrapping
   (erc-fill-function 'erc-fill-variable)
   (erc-fill-prefix "                         ")
