@@ -1,0 +1,31 @@
+
+SoundDriver = ALSA
+
+#rtx - tv
+AlsaDevice = hw:NVidia,7
+
+ShowTime = IfAvailable
+MusicDir = "/media/music"
+ReadTags = yes
+MP3IgnoreCRCErrors = yes
+Repeat = yes
+Shuffle = yes
+AutoNext = yes
+FormatString = "%(a:%a - :)%(t:%t:)"
+TagsCacheSize = 2048
+OutputBuffer = 2048
+InputBuffer = 512
+Prebuffering = 64
+ShowHiddenFiles = no
+StartInMusicDir = yes
+HideFileExtension = yes
+ShowFormat = no
+XTermTheme = green_theme
+MOCDir = ~/.moc
+SavePlayList = yes
+Allow24bitOutput = yes
+PlaylistNumbering = yes
+Layout1 = directory(0,0,35%,100%): playlist(35%,0,FILL,100%)
+FollowPlayedFile = yes
+CanStartInPlaylist = yes
+#SetXtermTitle = yes
