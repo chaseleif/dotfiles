@@ -1,0 +1,13 @@
+{
+  "Cell": {
+    "cm_config": {
+      "lineNumbers": true
+    }
+  },
+  "CodeCell": {
+    "cm_config": {
+      "autoCloseBrackets": false,
+	  "completeSingle": false
+    }
+  }
+}
