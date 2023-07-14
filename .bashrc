@@ -6,6 +6,10 @@ export PROMPT_COMMAND="printf \"\\033]0;%s@%s:%s\\007\" \"\${USER}\" \"\${HOSTNA
 export EDITOR=$(which vim)
 #alias python=python3
 #alias music=mocp
-#fortune | cowsay
+#if [ -z $COLUMNS ] ; then
+#  fortune -ac | cowsay -W 78 -e oO
+#else
+#  fortune -ac | cowsay -W $(($COLUMNS-4)) -e oO
+#fi
 #echo ""
 #~/.local/share/emptyTrash.sh
