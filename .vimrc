@@ -17,4 +17,17 @@ hi Type ctermfg=LightGreen
 set colorcolumn=81
 hi ColorColumn ctermbg=DarkGrey
 filetype plugin indent off
+
+function TabsOrSpaces()
+  if getfsize(bufname("%")) > 256000
+    return
+  endif
+  let numTabs=len(filter(getbufline(bufname("%"), 1, 250), 'v:val =~ "^\\t"'))
+  let numSpaces=len(filter(getbufline(bufname("%"), 1, 250), 'v:val =~ "^ "'))
+  if numTabs > numSpaces
+    setlocal noexpandtab
+  endif
+endfunction
+
+:autocmd BufReadPost * call TabsOrSpaces()
 :autocmd FileType make set noexpandtab
