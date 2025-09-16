@@ -1,5 +1,13 @@
 " if backspace/del doesn't work right
 " set t_kb=
+" fix home/end messing up
+" set <Home>=[7~
+" set <End>=[8~
+" make home/end go to start/end of file
+" nnoremap (ctrl+v)(ctrl+home) to gg (beginning of file)
+nnoremap [7^ gg
+" nnoremap (ctrl+v)(ctrl+end) to G (end of file)
+nnoremap [8^ G$
 set number
 set tabstop=2
 set softtabstop=2
