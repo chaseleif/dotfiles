@@ -39,3 +39,4 @@ endfunction
 
 :autocmd BufReadPost * call TabsOrSpaces()
 :autocmd FileType make set noexpandtab
+autocmd BufWritePost * if getline(1) =~ '^#!.*' | silent !chmod +x % | endif
