@@ -8,6 +8,11 @@
 nnoremap [7^ gg
 " nnoremap (ctrl+v)(ctrl+end) to G (end of file)
 nnoremap [8^ G$
+" status bar is line above insert-mode cursor row
+set laststatus=2
+":help statusline
+" status line is filepath/filename row:col
+set statusline+=%F\ %l\:%c
 set number
 set tabstop=2
 set softtabstop=2
@@ -37,6 +42,10 @@ function TabsOrSpaces()
   endif
 endfunction
 
-:autocmd BufReadPost * call TabsOrSpaces()
-:autocmd FileType make set noexpandtab
-autocmd BufWritePost * if getline(1) =~ '^#!.*' | silent !chmod +x % | endif
+if !exists("autocommands_loaded")
+  let autocommands_loaded = 1
+  autocmd BufReadPost * call TabsOrSpaces()
+  autocmd FileType make setlocal noexpandtab
+  autocmd BufWritePost * if getline(1) =~ '^#!.*'
+    \ | silent execute '!chmod +x ' . shellescape(expand('%')) | endif
+endif
