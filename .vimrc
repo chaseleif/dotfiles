@@ -31,6 +31,11 @@ set colorcolumn=81
 hi ColorColumn ctermbg=DarkGrey
 filetype plugin indent off
 
+hi DiffAdd ctermfg=White ctermbg=DarkGreen
+hi DiffChange ctermfg=None ctermbg=None
+hi DiffDelete ctermfg=LightBlue ctermbg=Red
+hi DiffText ctermfg=Yellow ctermbg=Red
+
 function TabsOrSpaces()
   if getfsize(bufname("%")) > 256000
     return
