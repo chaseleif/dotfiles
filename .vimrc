@@ -36,6 +36,8 @@ hi DiffChange ctermfg=None ctermbg=None
 hi DiffDelete ctermfg=LightBlue ctermbg=Red
 hi DiffText ctermfg=Yellow ctermbg=Red
 
+nnoremap <silent> zx :syntax sync fromstart<CR>
+
 function TabsOrSpaces()
   if getfsize(bufname("%")) > 256000
     return
