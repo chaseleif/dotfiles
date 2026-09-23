@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="apps-im-menu" label="Messaging">
+  <item label="Discord">
+    <action name="Execute">
+      <command>discord</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>discord</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Slack">
+    <action name="Execute">
+      <command>slack -s</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Slack</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Zoom">
+    <action name="Execute">
+      <command>zoom</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Zoom</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+  <item label="Librewolf">
+    <action name="Execute">
+      <command>librewolf</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Librewolf</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-editors-menu" label="Editors">
+  <item label="featherpad">
+    <action name="Execute"><command>featherpad</command></action>
+  </item>
+</menu>
+
+<menu id="apps-graphics-menu" label="Graphics">
+  <item label="Gimp">
+    <action name="Execute">
+      <command>gimp</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Inkscape">
+    <action name="Execute">
+      <command>inkscape</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Viewnior">
+    <action name="Execute">
+      <command>viewnior</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-office-menu" label="Office">
+  <item label="LibreOffice Calc">
+    <action name="Execute">
+      <command>libreoffice --calc</command>
+    </action>
+  </item>
+  <item label="LibreOffice Draw">
+    <action name="Execute">
+      <command>libreoffice --draw</command>
+    </action>
+  </item>
+  <item label="LibreOffice Writer">
+    <action name="Execute">
+      <command>libreoffice --writer</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-multimedia-menu" label="Multimedia">
+  <item label="MOC Play/Next">
+    <action name="Execute">
+      <command>mocplay</command>
+    </action>
+  </item>
+  <item label="VLC">
+    <action name="Execute">
+      <command>vlc</command>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-term-menu" label="Terminals">
+  <item label="lxterminal">
+    <action name="Execute"><command>lxterminal</command></action>
+  </item>
+</menu>
+
+<menu id="system-menu" label="System">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Manage Cups Printers">
+    <action name="Execute">
+      <command>xdg-open http://localhost:631/</command>
+      <startupnotify>
+        <enabled>no</enabled>
+        <icon>cups</icon>
+      </startupnotify>
+    </action>
+  </item>
+  <separator />
+  <item label="Reload Openbox Configuration">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Applications" />
+  <menu id="apps-im-menu"/>
+  <menu id="apps-net-menu"/>
+  <menu id="apps-editors-menu"/>
+  <menu id="apps-graphics-menu"/>
+  <menu id="apps-office-menu"/>
+  <menu id="apps-multimedia-menu"/>
+  <menu id="apps-term-menu"/>
+  <separator label="System" />
+  <menu id="system-menu"/>
+</menu>
+
+</openbox_menu>
