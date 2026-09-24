@@ -37,7 +37,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>Adwaita-dark</name>
+    <name>Artwiz-boxed</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -52,52 +52,52 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
-      <name>mono</name>
+      <name>Nimbus Mono PS</name>
       <size>16</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>mono</name>
+      <name>Nimbus Mono PS</name>
       <size>16</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>mono</name>
+      <name>Nimbus Mono PS</name>
       <size>16</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>mono</name>
-      <size>16</size>
+      <name>Nimbus Mono PS</name>
+      <size>15</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>mono</name>
+      <name>Nimbus Mono PS</name>
       <size>16</size>
-      <weight/>
-      <slant/>
+      <weight>Bold</weight>
+      <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>mono</name>
+      <name>Nimbus Mono PS</name>
       <size>16</size>
-      <weight/>
-      <slant/>
+      <weight>Bold</weight>
+      <slant>Normal</slant>
     </font>
   </theme>
   <desktops>
@@ -207,7 +207,7 @@
     <!-- Lock screen with Ctrl+Alt+Del -->
     <keybind key="A-C-Delete">
       <action name="Execute">
-        <command>lxlock</command>
+        <command>xscreensaver-command -lock</command>
       </action>
     </keybind>
     <!-- Launch gnome-screenshot when PrintScreen is pressed -->
