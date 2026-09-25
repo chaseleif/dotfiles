@@ -1,4 +1,4 @@
 @lxpanel --profile LXDE
 @xscreensaver --no-splash
-xautolock -time 6 -locker lxlock
-/home/chaseleif/.fehbg
+/usr/bin/numlockx
+/home/chaseleif/.local/bin/fehshuffle startup
