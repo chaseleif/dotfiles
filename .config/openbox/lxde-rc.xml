@@ -188,6 +188,11 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
+    <keybind key="C-S-m">
+      <action name="ToggleShowDesktop">
+        <strict>yes</strict>
+      </action>
+    </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
       <action name="NextWindow"/>
