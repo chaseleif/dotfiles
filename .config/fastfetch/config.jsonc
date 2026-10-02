@@ -145,9 +145,12 @@
     },
     {
       "type": "wm",
-      "format": "{#green}{pretty-name} ({protocol-name}){#}",
-      "keyIcon": "",
+      "format": "{#green}{pretty-name} {version} ({protocol-name}){#}",
       "detectPlugin": false
+    },
+    {
+      "type": "de",
+      "format": "{#green}{pretty-name}{#}"
     },
     {
       "type": "packages",
