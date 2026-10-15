@@ -96,9 +96,9 @@
 </menu>
 
 <menu id="apps-multimedia-menu" label="Multimedia">
-  <item label="MOC Play/Next">
+  <item label="MOC">
     <action name="Execute">
-      <command>mocplay</command>
+      <command>lxterminal --loginshell --command=mocp</command>
     </action>
   </item>
   <item label="VLC">
