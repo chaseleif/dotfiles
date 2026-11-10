@@ -45,7 +45,7 @@ function TabsOrSpaces()
   let numTabs=len(filter(getbufline(bufname("%"), 1, 250), 'v:val =~ "^\\t"'))
   let numSpaces=len(filter(getbufline(bufname("%"), 1, 250), 'v:val =~ "^ "'))
   if numTabs > numSpaces
-    setlocal noexpandtab
+    setlocal noexpandtab tabstop=2
   endif
 endfunction
 
@@ -53,6 +53,7 @@ if !exists("autocommands_loaded")
   let autocommands_loaded = 1
   autocmd BufReadPost * call TabsOrSpaces()
   autocmd FileType make setlocal noexpandtab
+  autocmd BufNewFile,BufRead *.ebuild setlocal noexpandtab tabstop=2
   autocmd BufWritePost * if getline(1) =~ '^#!.*'
     \ | silent execute '!chmod +x ' . shellescape(expand('%')) | endif
 endif
